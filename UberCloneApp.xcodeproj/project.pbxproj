@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1B17F66C26B14566005AB64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17F66B26B14566005AB64B /* AppDelegate.swift */; };
 		1B17F66E26B14566005AB64B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17F66D26B14566005AB64B /* SceneDelegate.swift */; };
-		1B17F67026B14566005AB64B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17F66F26B14566005AB64B /* ViewController.swift */; };
 		1B17F67326B14566005AB64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B17F67126B14566005AB64B /* Main.storyboard */; };
 		1B17F67526B1456A005AB64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B17F67426B1456A005AB64B /* Assets.xcassets */; };
 		1B17F67826B1456A005AB64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B17F67626B1456A005AB64B /* LaunchScreen.storyboard */; };
+		1B17F68726B149D8005AB64B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17F68626B149D8005AB64B /* LoginController.swift */; };
+		1B17F69626B18039005AB64B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17F69526B18039005AB64B /* Extensions.swift */; };
+		1B17F69926B1D751005AB64B /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17F69826B1D751005AB64B /* SignUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B17F66826B14566005AB64B /* UberCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B17F66B26B14566005AB64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B17F66D26B14566005AB64B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B17F66F26B14566005AB64B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B17F67226B14566005AB64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B17F67426B1456A005AB64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B17F67726B1456A005AB64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B17F67926B1456A005AB64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B17F68626B149D8005AB64B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1B17F69526B18039005AB64B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1B17F69826B1D751005AB64B /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		1B17F66A26B14566005AB64B /* UberCloneApp */ = {
 			isa = PBXGroup;
 			children = (
+				1B17F68426B14917005AB64B /* Model */,
+				1B17F68326B14914005AB64B /* View */,
+				1B17F68226B14913005AB64B /* Controller */,
+				1B17F68126B14910005AB64B /* Service */,
+				1B17F68026B14908005AB64B /* Utils */,
 				1B17F66B26B14566005AB64B /* AppDelegate.swift */,
 				1B17F66D26B14566005AB64B /* SceneDelegate.swift */,
-				1B17F66F26B14566005AB64B /* ViewController.swift */,
 				1B17F67126B14566005AB64B /* Main.storyboard */,
 				1B17F67426B1456A005AB64B /* Assets.xcassets */,
 				1B17F67626B1456A005AB64B /* LaunchScreen.storyboard */,
 				1B17F67926B1456A005AB64B /* Info.plist */,
 			);
 			path = UberCloneApp;
+			sourceTree = "<group>";
+		};
+		1B17F68026B14908005AB64B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1B17F69526B18039005AB64B /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1B17F68126B14910005AB64B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B17F68226B14913005AB64B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B17F68626B149D8005AB64B /* LoginController.swift */,
+				1B17F69826B1D751005AB64B /* SignUpController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B17F68326B14914005AB64B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B17F68426B14917005AB64B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B17F67026B14566005AB64B /* ViewController.swift in Sources */,
+				1B17F69926B1D751005AB64B /* SignUpController.swift in Sources */,
 				1B17F66C26B14566005AB64B /* AppDelegate.swift in Sources */,
+				1B17F68726B149D8005AB64B /* LoginController.swift in Sources */,
 				1B17F66E26B14566005AB64B /* SceneDelegate.swift in Sources */,
+				1B17F69626B18039005AB64B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
