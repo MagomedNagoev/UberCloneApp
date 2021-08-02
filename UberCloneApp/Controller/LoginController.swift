@@ -39,15 +39,10 @@ class LoginController: UIViewController {
         return UITextField().textField(withPlaceHolder: "Password", isSecureTextEntry: true)
     }()
     
-    private let loginButton: UIButton = {
-        let button = UIButton(type: .system)
+    private let loginButton: AuthButton = {
+        let button = AuthButton(type: .system)
         button.setTitle("Log In", for: .normal)
-        button.setTitleColor(UIColor(white: 1, alpha: 0.5), for: .normal)
-        button.backgroundColor = .mainBlueTinit
-        button.layer.cornerRadius = 5
-        button.anchor(height:50)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        
         return button
     }()
     
@@ -81,8 +76,6 @@ class LoginController: UIViewController {
     //MARK: -Selectors
     
     @objc func handleShowSignUp() {
-        print("Attempting to push controller...")
-        
         let controller = SignUPController()
         navigationController?.pushViewController(controller, animated: true)
     }
