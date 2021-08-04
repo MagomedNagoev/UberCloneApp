@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B03299226BAFB7C0065B286 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03299126BAFB7C0065B286 /* HomeController.swift */; };
 		1B0B736D26B876A60062BE30 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B736C26B876A60062BE30 /* AuthButton.swift */; };
 		1B0B737026B987C20062BE30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B0B736F26B987C20062BE30 /* GoogleService-Info.plist */; };
 		1B17F66C26B14566005AB64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17F66B26B14566005AB64B /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B03299126BAFB7C0065B286 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1B0B736C26B876A60062BE30 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		1B0B736F26B987C20062BE30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1B17F66826B14566005AB64B /* UberCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			children = (
 				1B17F68626B149D8005AB64B /* LoginController.swift */,
 				1B17F69826B1D751005AB64B /* SignUpController.swift */,
+				1B03299126BAFB7C0065B286 /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,7 +135,6 @@
 				4D2CE005673D8A25BDCED516 /* Pods-UberCloneApp.debug.xcconfig */,
 				8D2DECD8AF729E3EDDA87DDD /* Pods-UberCloneApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -261,6 +263,7 @@
 			files = (
 				1B17F69926B1D751005AB64B /* SignUpController.swift in Sources */,
 				1B0B736D26B876A60062BE30 /* AuthButton.swift in Sources */,
+				1B03299226BAFB7C0065B286 /* HomeController.swift in Sources */,
 				1B17F66C26B14566005AB64B /* AppDelegate.swift in Sources */,
 				1B17F68726B149D8005AB64B /* LoginController.swift in Sources */,
 				1B17F66E26B14566005AB64B /* SceneDelegate.swift in Sources */,
@@ -341,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -396,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
